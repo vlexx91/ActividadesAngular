@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="items">
+    <h2>Items</h2>
+    <div *ngFor="let item of items" class="item">
+      <span>{{ item.nombre }} - €{{ item.precio }}</span>
+      <button (click)="restarCantidad(item)">-</button>
+      <span>{{ item.cantidad }}</span>
+      <button (click)="incrementarCantidad(item)">+</button>
+    </div>
+  </div>
+  <div class="cart">
+    <h2>Carrito</h2>
+    <div *ngFor="let item of items">
+      <div *ngIf="item.cantidad > 0" class="cart-item">
+        <span>{{ item.nombre }} x {{ item.cantidad }} - €{{ item.precio * item.cantidad }}</span>
+      </div>
+    </div>
+    <div class="total">
+      <strong>Total: {{ total }} €</strong>
+    </div>
+  </div>
+</div>

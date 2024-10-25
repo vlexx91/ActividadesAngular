@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+.items, .cart {
+  width: 45%;
+}
+
+.item, .cart-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 1.2em;
+}

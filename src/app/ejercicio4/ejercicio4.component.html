@@ -1,0 +1,8 @@
+<div>
+  <input [(ngModel)]="tiempoSegundos" type="number" placeholder="Tiempo en segundos" />
+  <button (click)="startTemporizador()">Iniciar Temporizador</button>
+  <button (click)="stopTemporizador()">Stop Temporizador</button>
+</div>
+<div>
+  <p>Tiempo actual: {{ diferenciaTiempo }} segundos</p>
+</div>
